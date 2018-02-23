@@ -1,2 +1,28 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+$us-blue: #002664;
+$us-white: #fff;
+$us-red: #BB133E;
+
+body {
+  background-color: $us-blue;
+  color: $us-white;
+}
+
+.image-container {
+  text-align: center;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.details {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+a {
+  color: white !important;
+}
