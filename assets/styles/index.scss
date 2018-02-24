@@ -12,8 +12,10 @@ body {
 
 .image-container {
   text-align: center;
+  width: 100%;
 
   img {
+    max-width: 100%;
     border-radius: 10px;
   }
 }
