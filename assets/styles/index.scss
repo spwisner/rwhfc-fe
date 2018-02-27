@@ -106,6 +106,10 @@ body {
   background-color: $us-white !important;
 }
 
+.mailchimp-row {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 951px) {
 
   .row{
@@ -147,5 +151,10 @@ body {
 
   .message-col {
     padding-bottom: 15px;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
