@@ -158,3 +158,13 @@ body {
     margin-right: 0 !important;
   }
 }
+
+@media (max-width: 850px) {
+  .image-text-container {
+    text-align: center;
+    img {
+      width: 100% !important;
+      max-width: 100% !important
+    }
+  }
+}
