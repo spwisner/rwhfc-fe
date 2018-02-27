@@ -3,7 +3,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 
 $us-blue: #002664;
 $us-white: #fff;
-$us-red: #BB133E;
+$us-red: #bb133e;
 
 body {
   background-color: $us-blue;
@@ -72,8 +72,9 @@ body {
 }
 
 .message-header {
-  color: $us-red !important;
+  color: $us-red;
   text-align: center;
+  font-weight: bold;
 }
 
 .message-container {
@@ -90,6 +91,10 @@ body {
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
+
+  #mc-embedded-subscribe {
+    background-color: $us-red;
+  }
 }
 
 .mailchimp-container {
@@ -97,35 +102,50 @@ body {
   margin-top: 15px;
 }
 
-.row{
-    overflow: hidden;
-}
-
-.content-row {
-  margin-right: 0 !important;
-}
-
-[class*="col-xs-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}
-
 .message-col {
   background-color: $us-white !important;
 }
 
+@media (min-width: 951px) {
+
+  .row{
+      overflow: hidden;
+  }
+
+  .content-row {
+    margin-right: 0 !important;
+  }
+
+  [class*="col-xs-"]{
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+  }
+}
+
 @media (max-width: 950px) {
+  .image-text-container {
+    text-align: center;
+    img {
+      width: 80% !important;
+      max-width: 100% !important
+    }
+  }
+
   .col-xs-6 {
     width: 100% !important;
   }
 
   .mailchimp-container {
-    margin-top: 0;
+    // margin-top: 0;
     margin-left: -15px;
     margin-right: -15px;
   }
 
   .image-text-container {
     margin-bottom: 15px;
+  }
+
+  .message-col {
+    padding-bottom: 15px;
   }
 }
